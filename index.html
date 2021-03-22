@@ -3,6 +3,9 @@
 
 <head>
     <title>The Pet Shop</title>
+    <link rel="stylesheet" href="CSS/design.css"/>
+    <script src='javascript/app.js'></script>
+    <!-- <script>getfavouritedogbreed()</script>  -->
 </head>
 
 <body>
@@ -27,25 +30,35 @@
     </header>
 
     <main>
-        <div>
-            <img src="https://yt3.ggpht.com/ytc/AAUvwnhFY3d8qOpu-KNOALIzsq4ECnGwTPwWmVVpkdM9Fg=s176-c-k-c0x00ffffff-no-rj"
-                alt="classical art" width="250px">
-            <h3>
-                <a href="#">Dogs</a>
-            </h3>
-        </div>
-        <div>
-            <img src="https://www.purina.com.au/-/media/project/purina/main/breeds/cat/cat_scottish-fold_desktop.jpg?h=475&la=en&w=825&hash=11621224AFA45A6966221DC2403A03DE"
-                alt="classical art" width="250px">
-            <h3>
-                <a href="#">Cats</a>
-            </h3>
-        </div>
+       <section id="first">
+            <div class="image-container">
+                <img src="https://yt3.ggpht.com/ytc/AAUvwnhFY3d8qOpu-KNOALIzsq4ECnGwTPwWmVVpkdM9Fg=s176-c-k-c0x00ffffff-no-rj"
+                    alt="classical art" width="250px">
+                <h3>
+                    <a href="#">Dogs</a>
+                </h3>
+            </div>
+            <div class="image-container">
+                <img src="https://www.purina.com.au/-/media/project/purina/main/breeds/cat/cat_scottish-fold_desktop.jpg?h=475&la=en&w=825&hash=11621224AFA45A6966221DC2403A03DE"
+                    alt="classical art" width="250px">
+                <h3>
+                    <a href="#">Cats</a>
+                </h3>
+            </div>
+        </section> 
+        <section id="second">
+            <div>
+                <script>
+                    document.write(getFavouriteDogBreed())
+                </script>
+            </div>
+        </section>
     </main>
     <footer>
-     
-        <script src='javascript/app.js'></script>
         <p>Contact us for more information on the process of buying or adopting</p>
+        <script>
+            addConfirmation(adds)
+        </script>
     </footer>
 </body>
 
